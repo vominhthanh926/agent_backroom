@@ -8,7 +8,7 @@ const server = createServer()
 const io = new Server(server, {
   cors: {
     origin: process.env.NODE_ENV === 'production'
-        ? process.env.FRONTEND_URL || '*.ondigitalocean.app'
+        ? process.env.FRONTEND_URL || process.env.FRONTEND_URL
         : "http://localhost:3000",
     methods: ["GET", "POST"],
     credentials: true
@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
 
   // Only setup change stream once
   if (!changeStreamInitialized) {
-    setupChangeStream().then(r => console.log("SetupChangeStream is running"));
+    setupChangeStream().then(() => console.log("SetupChangeStream is running"));
     changeStreamInitialized = true;
   }
 });

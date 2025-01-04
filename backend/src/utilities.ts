@@ -1,6 +1,7 @@
-import {ChangeStreamDocument, MongoClient} from 'mongodb';
-let client: MongoClient | null = null;
+import {MongoClient} from 'mongodb';
 import * as dotenv from "dotenv";
+
+let client: MongoClient | null = null;
 
 dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI;

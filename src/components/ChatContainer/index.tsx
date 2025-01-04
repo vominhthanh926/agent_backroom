@@ -12,6 +12,8 @@ interface Message {
   content: string;
 }
 
+const BACKEND_URL : string = process.env.BACKEND_URL ? process.env.BACKEND_URL : "http://localhost:4000";
+
 const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const socketRef = useRef<typeof Socket | null>(null);
@@ -42,7 +44,7 @@ const ChatContainer = () => {
       }
     };
 
-    fetchDocuments();
+    fetchDocuments().then(() => {});
 
     // Clean up function to handle component unmount
     return () => {
@@ -58,7 +60,7 @@ const ChatContainer = () => {
     
     // Only create socket if it doesn't exist
     if (!socketRef.current) {
-      const socket = io("http://localhost:4000", {
+      const socket = io(BACKEND_URL, {
         auth: {
           sessionId: existingSessionId
         },
