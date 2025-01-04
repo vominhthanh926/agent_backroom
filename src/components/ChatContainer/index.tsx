@@ -17,7 +17,7 @@ interface Message {
 }
 
 
-const BACKEND_URL: string = process.env.BACKEND_URL ? process.env.BACKEND_URL : "http://54.252.160.150:4000";
+const BACKEND_URL: string = process.env.BACKEND_URL ? process.env.BACKEND_URL : "http://13.236.85.199:4000";
 
 const ChatContainer = () => {
     const [messages, setMessages] = useState<Message[]>([]);
