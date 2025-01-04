@@ -1,0 +1,118 @@
+CONNECTED(00000005)
+---
+Certificate chain
+ 0 s:CN=*.badssl.com
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  6 16:37:15 2024 GMT; NotAfter: Feb  4 16:37:14 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIE8zCCA9ugAwIBAgISBMsu3Ka/bZpQeaxKENbBWXwGMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjQxMTA2MTYzNzE1WhcNMjUwMjA0MTYzNzE0WjAXMRUwEwYDVQQD
+DAwqLmJhZHNzbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCj
+RUnu4ZFdGI2QAOSRiQC4uA5s1UrCRPGrfpQzahL/7+V8u+fCUJAdIep/dm/C2kA8
+NA0CbdYK/XCzC3wzxCcxazia69Ki0TfwyAfEYVQvV5+NwahBF/3vteozfXCsxp9d
+mH1QuGY6ZzAEc7GHS1rHI0jwbl/h9NLBWrM9SjZ2Ujpwi1ghW6fgFctNj4HrNBcR
+jqwyKMraOW3zIjLmq96rTNSclqJAF+Pjt+nxTxgoAu9g+xawI8/kplG+u1OOW/tF
+2rJHSZaCYM6eAsgqGLjmi593SYvNFinvsIT8+Ax/nrvAXWEZ8we2qRh2JHAB1Grm
+OntDYmLGGcdaU5MYOYiBAgMBAAGjggIbMIICFzAOBgNVHQ8BAf8EBAMCBaAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O
+BBYEFMHPyIg/XFCrwr+rRClns8xj5q8QMB8GA1UdIwQYMBaAFMXPRqTq9MPAemyV
+xC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDovL3Ix
+MS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9y
+Zy8wIwYDVR0RBBwwGoIMKi5iYWRzc2wuY29tggpiYWRzc2wuY29tMBMGA1UdIAQM
+MAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUAouMK5EXvva2b
+fjjtR2d3U9eCW4SU1yteGyzEuVCkR+cAAAGTAovwSwAABAMARjBEAiBSc8/aK+7a
+Uc+Gk8pfjVK4XzxP9yQ0RP46AMvyKIkddgIgKyg7SKVeIvTJkcBJRN8HBKFBZlkd
+IhSbiuvlKeQlt0YAdgDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAA
+AZMCi/BTAAAEAwBHMEUCIQCXxQ9t2tgepDEhlzCflaNLpf7i8iQ2YFeKeetgjl9Q
+owIgHNz5NJAKIE0+qEb5qT1nZ75U3HdKshpozZOPKnzYEfUwDQYJKoZIhvcNAQEL
+BQADggEBAD/BJQX0vji4Wq5B1FbrBPVKRXJNNdPSt3HRZRa882U+x00vjIaJvHZ3
+SVokV1gi+5RGRF+UDSIfjAgr+26dwygBfvqG12Z311ZWMzg/xZXwzTDGyfktnSQd
+BZIZarpmPzLhJIXjq0sathW2RfvdsaJmsAGdUFv/0BDfqpRVKWHH2LcfuXIQZo6k
+iNrcPsxo7PJm+YRigdaGRj+jmEs20k7Dp4ivsxVmm6tgq06+Sh3u1RnsFqUfkG8g
+HDTPuuOa/g4MnhBVnrdL+XCC638as/kKhl+XCMxA6nQBnszeexkB0c9E5f2zyioW
+7myY/HzYkS2RTAPh1NH217K2jzV8kN0=
+-----END CERTIFICATE-----
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw
+WhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg
+RW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJ
+DAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxG
+AGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy
+6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnw
+SVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLP
+Xzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIB
+hjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB
+/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAU
+ebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAC
+hhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcG
+A1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcN
+AQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1y
+v4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE38
+01S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1
+e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtn
+UfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoV
+aneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+Z
+WghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/R
+PBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/q
+pdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo
+6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjV
+uYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=*.badssl.com
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 3254 bytes and written 454 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Protocol: TLSv1.2
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 51EAD6AA53575EE22F9207885D9DADD33117E60734A4624685943B16A0A940E5
+    Session-ID-ctx:
+    Master-Key: 8DCB522B4BEDE541125600F1786C68001E62865254A754C68F78FBFF1FD4E7C17DD680B628274FFBA1493ACA8D02BB31
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - b2 ae 85 83 71 27 d2 50-ef 34 be dc 41 ce 00 da   ....q'.P.4..A...
+    0010 - 0a 50 22 67 cc 58 95 cf-9a 8a 82 39 f8 39 43 8d   .P"g.X.....9.9C.
+    0020 - 02 85 49 9e d8 dd 62 5d-8c c0 94 03 95 43 38 7c   ..I...b].....C8|
+    0030 - bf 9e 8a 4d 84 1e bc 64-d2 16 15 2d 6b b1 5a 1c   ...M...d...-k.Z.
+    0040 - 82 05 e4 c8 b6 77 f1 f2-46 40 93 f3 6a 9d 8a d2   .....w..F@..j...
+    0050 - bc a7 bc 11 2f 34 59 e5-82 b7 78 f5 bf 90 7f 35   ..../4Y...x....5
+    0060 - 99 f9 a4 4f ef 97 e1 dc-ba a7 5a 71 ed f6 f6 cb   ...O......Zq....
+    0070 - c1 d5 b2 8c 43 41 0c 58-81 c5 dd 24 50 a9 12 ee   ....CA.X...$P...
+    0080 - 88 02 90 a3 28 22 28 e4-2b 97 0b fa 01 1b ab 7c   ....("(.+......|
+    0090 - 07 bd 10 7f b2 26 49 02-73 84 e8 cb 0d d3 a9 00   .....&I.s.......
+    00a0 - 2a f2 56 0f 40 c9 ff 34-87 e0 f6 c2 0b f0 d7 45   *.V.@..4.......E
+    00b0 - 62 7b 8d 42 26 3c 3d be-25 35 48 f9 c1 a5 9f de   b{.B&<=.%5H.....
+
+    Start Time: 1735367308
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
