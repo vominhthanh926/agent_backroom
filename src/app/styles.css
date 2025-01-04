@@ -1,0 +1,118 @@
+.bg-parchment {
+    background: url('../../public/img/bg.jpg') no-repeat center center / cover;
+}
+
+h1 {
+    text-shadow: 2px 1px 6px white;
+}
+
+.lotr {
+    max-width: 920px;
+    width: 100%;
+    height: 320px;
+    background: url('../../public/img/lotr.png') no-repeat center center / 100% 100%;
+}
+
+#message-container {
+    position: relative;
+    max-width: 1100px;
+    min-height: 510px;
+    /* height: 383px; */
+    background: url('../../public/img/chat-board.png') no-repeat center center / 100% 100%;
+}
+
+
+.wrap-content {
+    display: flex;
+    align-items: end;
+    max-width: 1800px;
+    margin: 0 auto;
+   
+}
+
+.desc-text {
+    font-weight: bold;
+    font-size: 23px;
+    max-width: 700px;
+    text-shadow: 1px 1px 5px white;
+    color: #000000;
+    line-height: 30px;
+}
+
+.font-lotr {
+    font-family: 'RingFont', sans-serif;
+}
+
+.lord-button {
+    position: relative;
+    font-family: 'RingFont', sans-serif;
+    max-width: 260px;
+    min-width: 260px;
+    height: 46px;
+    font-size: 24px;
+    width: 100%;
+    color: #fff;
+    border-radius: 24px;
+    z-index: 1;
+}
+
+.lord-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 258px;
+    width: 100%;
+    height: 46px;
+    z-index: -1;
+    background-color: #121A00;
+    border-radius: 24px;
+}
+
+.lord-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 260px;
+    width: 100%;
+    height: 54px;
+    z-index: 2;
+    background: url('../../public/img/light-border.png') no-repeat center center / 100% 100%;
+}
+
+.lord-button.dark::before {
+    background-color: #120002;
+}
+
+.lord-button.dark::after {
+    background: url('../../public/img/dark-border.png') no-repeat center center / 100% 100%;
+}
+
+.blur-bg {
+    backdrop-filter: blur(10px);
+}
+
+.wrap-chat-container {
+    margin: 65px auto 10px;
+    height: calc(100% - 100px);
+    width: calc(100% - 140px);
+    overflow: hidden;
+
+}
+
+.chat-container {
+    /* min-h-[350px] flex flex-col gap-4 p-4 overflow-y-auto h-[300px] */
+
+    max-width: 1000px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 34px;
+    overflow-y: auto;
+    height: calc(100% - 100px);
+    /* margin-bottom: -20px; */
+}
