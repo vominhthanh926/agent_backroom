@@ -24,14 +24,8 @@ export default function Home() {
             <LordButton text="Virtual" />
           </Link>
         </div>
-        <div
-          id="message-container"
-          className="max-w-4xl mt-[0] mx-auto p-4 bg-scroll rounded-lg overflow-y-auto h-96"
-        >
-          <div className="wrap-chat-container  ">
-            <ChatContainer />
-          </div>
-        </div>
+
+        <ChatContainer />
 
         <div className="links links-sauron flex flex-col gap-4 flex-1 relative top-[-44px]">
           <Link href="https://x.com/sauronthering" target="_blank">
