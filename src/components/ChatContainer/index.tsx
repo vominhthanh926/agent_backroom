@@ -1,9 +1,12 @@
 // import { useAtomValue } from "jotai";
 import React, { memo, useEffect, useRef, useState } from "react";
 import io,{ Socket } from "socket.io-client";
+import * as dotenv from "dotenv";
 
 import LeftMessage from "./LeftMessage";
 import RightMessage from "./RightMessage";
+
+dotenv.config();
 
 interface Message {
   _id: string;
@@ -12,7 +15,8 @@ interface Message {
   content: string;
 }
 
-const BACKEND_URL : string = process.env.BACKEND_URL ? process.env.BACKEND_URL : "http://localhost:4000";
+
+const BACKEND_URL : string = process.env.BACKEND_URL ? process.env.BACKEND_URL : "http://54.252.160.150:4000";
 
 const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -57,7 +61,8 @@ const ChatContainer = () => {
   // Separate useEffect for socket connection
   useEffect(() => {
     const existingSessionId = localStorage.getItem('sessionId');
-    
+
+    console.log("Connect socket server", BACKEND_URL)
     // Only create socket if it doesn't exist
     if (!socketRef.current) {
       const socket = io(BACKEND_URL, {
