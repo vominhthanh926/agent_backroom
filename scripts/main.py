@@ -57,7 +57,6 @@ def read_single_keypress():
 
 @retry(Exception, tries=10, delay=5)
 def get_access_token():
-    print(f"access_token is start")
     response = requests.post(
         f"{BASE_URL}/api/accesses/tokens",
         headers={"X-API-KEY": API_KEY},
@@ -74,7 +73,6 @@ def get_access_token():
 
     global ACCESS_TOKEN
     ACCESS_TOKEN = json_res["data"]["accessToken"]
-    print(f"get_access_token is done")
 
 
 @retry(Exception, tries=10, delay=5)
@@ -97,9 +95,9 @@ def send_message(message, opponent, context):
         timeout=30
     )
 
-    print(f"send_message | response: {response} | {response.content}")
-    # Invalid token || token expired || Session ended
+    print(f"send_message | {response}")
 
+    # Invalid token || token expired || Session ended
     if [401, 402, 403].__contains__(response.status_code):
         get_access_token()
         raise Exception
@@ -129,7 +127,7 @@ def interact(role, conversation_1, conversation_2, opponent, context, supervised
         response = response.lstrip("undefined:").strip()
 
         global MSG_SEND_COUNT
-        print(f"{MSG_SEND_COUNT} | {role} | {interaction_count}: {response}\n")
+        print(f"{MSG_SEND_COUNT} | {role} | {interaction_count} \n")
         interaction_count += 1
         MSG_SEND_COUNT += 1
         if supervised_mode:

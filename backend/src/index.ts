@@ -64,7 +64,7 @@ async function setupChangeStream() {
           const timestamp = JSON.stringify(change.fullDocument.timestamp);
           const role = JSON.stringify(change.fullDocument.role);
           if (io) {
-            console.log(timestamp, role, content);
+            console.log(timestamp, role);
             io.emit('newDocument', timestamp, content, role);
           }
         } else {
