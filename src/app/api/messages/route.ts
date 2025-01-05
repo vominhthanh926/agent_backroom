@@ -33,7 +33,7 @@ async function getLatestChat() {
 export async function GET() {
   try {
     const chat = await getLatestChat();
-    const documents = await chat.find().toArray();
+    const documents = await chat.find().limit(200).toArray();
     const json = JSON.stringify(documents);
     return NextResponse.json(json);
   } catch (error) {
