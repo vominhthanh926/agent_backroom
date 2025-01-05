@@ -33,7 +33,15 @@ async function getLatestChat() {
 export async function GET() {
   try {
     const chat = await getLatestChat();
-    const documents = await chat.find().limit(200).toArray();
+    const  hour = 60*60*1000;
+    const date = new Date((new Date()).getTime() - hour);
+    const documents = await chat.find(
+        {
+          timestamp: {
+            $gte: date,
+          }
+        }
+    ).toArray();
     const json = JSON.stringify(documents);
     return NextResponse.json(json);
   } catch (error) {
